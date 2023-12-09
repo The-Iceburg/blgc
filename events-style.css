@@ -55,3 +55,10 @@ body {
 .event-tile:hover {
     transform: scale(1.2);
 }
+
+.event-info-container {
+    width: 100%;
+    background-color: #242424;
+    color: #ffffff;
+    text-align: center;
+}

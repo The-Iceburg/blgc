@@ -1,5 +1,7 @@
-function loadEventContent(file) {
-    fetch(file)
+function loadEventContent() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const fileName = urlParams.get('eventID');
+    fetch(fileName + '.html')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -14,3 +16,5 @@ function loadEventContent(file) {
         console.error('There was a problem fetching the file:', error);
       });
 }
+
+loadEventContent()
