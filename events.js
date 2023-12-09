@@ -1,4 +1,3 @@
-
 function loadEventContent(file) {
     fetch(file)
       .then(response => {
@@ -14,4 +13,4 @@ function loadEventContent(file) {
       .catch(error => {
         console.error('There was a problem fetching the file:', error);
       });
-  }
+}
