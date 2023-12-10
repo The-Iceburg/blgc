@@ -86,26 +86,43 @@
             showSlides(slideIndex);
             
             function plusSlides(n) {
-              showSlides(slideIndex += n);
+                showSlides(slideIndex += n);
             }
             function currentSlide(n) {
-              showSlides(slideIndex = n);
+                showSlides(slideIndex = n);
             }
             function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
             }
         </script>
+        <div class="what-we-do-container">
+            <h1 id="wwd-text">What we do</h1>
+            <div class="what-we-do-tile">
+                <h3>Beach Training</h3>
+                <img src="./img/beach-training.jpeg">
+                <p>We train regularly throughout the summer months with all our members having access to multiple sessions a week in which we teach a variety of skills. This is all based at our beach based Club HQ @ Joseph Steps, Bournemouth. We also run winter training for our very keen adult members who each Sunday brave the cold water to keep fit.</p>
+            </div>
+            <div class="what-we-do-tile">
+                <h3>Pool Training</h3>
+                <img src="./img/pool-training.jpeg">
+                <p>As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday’s with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up.</p>
+            </div>
+            <div class="what-we-do-tile">
+                <h3>IRB Training</h3>
+                <img src="./img/irb-training.jpg">
+            </div>
+        </div>
     </body>
 </html>

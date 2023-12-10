@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 ul {
@@ -48,6 +49,7 @@ body {font-family: Verdana, sans-serif; margin:0}
     object-fit: cover;
     height: 92.5vh;
     width: 100%;
+    border-bottom: solid 5px black;
 }
 
 
@@ -117,6 +119,28 @@ body {font-family: Verdana, sans-serif; margin:0}
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+#wwd-text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.what-we-do-container {
+    padding: 10px
+}
+
+.what-we-do-tile {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    border: solid 5px black;
+}
+
+.what-we-do-tile img {
+    object-fit: cover;
+    height: 200px;
+    width: 95%;
 }
 
 @keyframes fade {
