@@ -9,10 +9,31 @@
 }
 
 .what-we-do-tile {
-    width: 33.3%;
-    float: left;
+    flex: 1;
+    padding: 20px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin: 0 20px;
+    width: 30%;
     text-align: center;
-    border: solid 5px black;
+    border-radius: 25px;
+    float: left;
+}
+
+#pool-training {
+    background-color: #50a3d7;
+    box-shadow: rgba(80, 163, 215, 0.4) 0px 5px, rgba(80, 163, 215, 0.3) 0px 10px, rgba(280, 163, 215, 0.2) 0px 15px, rgba(80, 163, 215, 0.1) 0px 20px, rgba(80, 163, 215, 0.05) 0px 25px;
+}
+#beach-training {
+    background-color: #ef877e;
+    box-shadow: rgba(239, 135, 126, 0.4) -5px 5px, rgba(239, 135, 126, 0.3) -10px 10px, rgba(239, 135, 126, 0.2) -15px 15px, rgba(239, 135, 126, 0.1) -20px 20px, rgba(239, 135, 126, 0.05) -25px 25px;
+}
+#irb-training {
+    background-color: #fcde5a;
+    box-shadow: rgba(252, 222, 90, 0.4) 5px 5px, rgba(252, 222, 90, 0.3) 10px 10px, rgba(252, 222, 90, 0.2) 15px 15px, rgba(252, 222, 90, 0.1) 20px 20px, rgba(252, 222, 90, 0.05) 25px 25px;
+}
+
+.learn-more {
+    background-color: #ffffff;
 }
 
 .what-we-do-tile img {
