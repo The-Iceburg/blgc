@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!------------>
+        <!-- Header -->
+        <!------------>
+
         <!-- Tab Styling -->
 		<title>Bournemouth Lifeguard Corps</title>
         <link rel="icon" href="./img/logo.png">
@@ -11,24 +16,43 @@
 		<!-- Page Styling -->
 		<script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./homestyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
     </head>
     <body>
+        
+        <!-------------------->
+        <!-- Navigation Bar -->
+        <!-------------------->
+
         <nav>
             <ul>
+
+                <!-- Logo -->
                 <li><a class="nav-left" href="./"><img src="./img/logo.png" alt="BLGC Logo"></a></li>
                 <li><a class="nav-left" href="./">Bournemouth<br>Lifeguard Corps</a></li>
+
+                <!-- Donation Button -->
                 <li><a class="nav-right" id="donate" href="https://www.paypal.com/fundraiser/hub">Donate</a></li>
+
+                <!-- Options -->
                 <li><a class="nav-right" href="./members"><i class="fa-solid fa-user"></i> Members Page</a></li>
                 <li><a class="nav-right" href="./contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
-                <li><a class="nav-right" href="./news-and-events"><i class="fa-solid fa-newspaper"></i> News + Events</a></li>
+                <li><a class="nav-right" href="./news-and-events"><i class="fa-solid fa-newspaper"></i> News</a></li>
+                <li><a class="nav-right" href="./news-and-events"><i class="fa-solid fa-calendar"></i> Events</a></li>
                 <li><a class="nav-right" href="./what-we-do"><i class="fa-solid fa-life-ring"></i> What We Do</a></li>
                 <li><a class="nav-right" href="./about-us"><i class="fa-solid fa-circle-info"></i> About-Us</a></li>
+
             </ul>
         </nav>
+
+        <!---------------------->
+        <!-- Picture Carousel -->
+        <!---------------------->
+
         <div class="slideshow-container">
+
+            <!-- Carousel 1 - Wide of Durley Chine - Saving Lives Since 1965! -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -36,6 +60,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-1.jpg">
             </div>
+
+            <!-- Carousel 2 - Cadet entering the sea - Always Ready, Always Prepared -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -43,6 +70,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-2.jpg">
             </div>
+
+            <!-- Carousel 3 - IRB Closeup - Specialist Equipment -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -50,6 +80,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-3.jpg">
             </div>
+
+            <!-- Carousel 4 - Rookies training in the pool - Precise Practice -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -57,6 +90,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-4.jpeg">
             </div>
+
+            <!-- Carousel 5 - Intructor pointing at a mannequin - Expert Instructors -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -64,6 +100,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-5.jpg">
             </div>
+
+            <!-- Carousel 6 - Lifeguards wearing 'rescue' bouyancy aids - Looking Professional -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -71,6 +110,9 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-6.jpg">
             </div>
+
+            <!-- Carousel 7 - IRBs positionsed below a lighthouse - Sharing and Learning with Other Clubs -->
+
             <div class="mySlides fade">
                 <div class="text" id="we-are"><b>We Are</b></div>
                 <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
@@ -78,9 +120,18 @@
                 <div class="text" id="learn-more"><button>Learn More</button></div>
                 <img src="./img/carousel-7.jpg">
             </div>
+            
+            <!-- Left + Right Buttons -->
+
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
+
+        <!---------------------------->
+        <!-- Carousel Functionality -->
+        <!---------------------------->
+
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
@@ -107,22 +158,59 @@
                 dots[slideIndex-1].className += " active";
             }
         </script>
+
+        <!---------------->
+        <!-- What We Do -->
+        <!---------------->
+
+        <h1 id="wwd-text">What we do</h1>
+
         <div class="what-we-do-container">
-            <h1 id="wwd-text">What we do</h1>
-            <div class="what-we-do-tile">
+
+            <!-- Beach Training - Picture of Cadets + Instructor in the sea - brief description - learn more button -->
+
+            <div id="beach-training" class="what-we-do-tile">
                 <h3>Beach Training</h3>
                 <img src="./img/beach-training.jpeg">
                 <p>We train regularly throughout the summer months with all our members having access to multiple sessions a week in which we teach a variety of skills. This is all based at our beach based Club HQ @ Joseph Steps, Bournemouth. We also run winter training for our very keen adult members who each Sunday brave the cold water to keep fit.</p>
+                <button>Learn More</button>
             </div>
-            <div class="what-we-do-tile">
+
+            <!-- Pool Training - Rookies training in the pool - learn more button -->
+
+            <div id="pool-training" class="what-we-do-tile">
                 <h3>Pool Training</h3>
                 <img src="./img/pool-training.jpeg">
-                <p>As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday’s with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up.</p>
+                <p>As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday’s with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet unde tenetur quidem rem veniam.</p>
+                <button>Learn More</button>
             </div>
-            <div class="what-we-do-tile">
+
+            <!-- IRB Training - IRB Closeup - learn more button -->
+
+            <div id="irb-training" class="what-we-do-tile">
                 <h3>IRB Training</h3>
                 <img src="./img/irb-training.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis, ipsam ad velit doloribus veniam labore est corporis, aliquid quae illo, odit excepturi ea explicabo. Obcaecati earum quidem expedita ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, ullam minima. Praesentium quos dicta, tenetur maxime Lorem.</p>
+                <button>Learn More</button>
             </div>
+
         </div>
+
+        <!-------------->
+        <!-- About Us -->
+        <!-------------->
+
+        <!------------------->
+        <!-- News / Events -->
+        <!------------------->
+
+        <!---------------->
+        <!-- Contact Us -->
+        <!---------------->
+
+        <!------------>
+        <!-- Footer -->
+        <!------------>
+
     </body>
 </html>

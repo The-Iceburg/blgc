@@ -1,21 +1,206 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Tab Styling -->
-		<title>Speeds '24 - Home</title>
-        <link rel="icon" href="./img/logo.png">
+<head>
+    <!-- Tab Styling -->
+    <title>Bournemouth Lifeguard Corps</title>
+    <link rel="icon" href="./img/logo.png">
 
-        <!-- Responsive Design Tag -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Responsive Design Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Page Styling -->
-		<script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./style.css">
-    </head>
+    <!-- Page Styling -->
+    <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/nav-bar.css">
+    <link rel="stylesheet" href="./styles/image-carousel.css">
+    <link rel="stylesheet" href="./styles/what-we-do.css">
+    <link rel="stylesheet" href="./styles/about-us.css">
+    <link rel="stylesheet" href="./styles/news-and-events.css">
+    <link rel="stylesheet" href="./styles/contact-us.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+</head>
     <body>
-        <ul>
-            <li><a class="active" href="./index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="./events.html"><i class="fas fa-calendar-days"></i> Events</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-element-list">
+                <li><a class="nav-float-left nav-element"                           id="blgc-logo"      href="./"><img src="./img/logo.png" alt="BLGC Logo"></a></li>
+                <li><a class="nav-float-left nav-element"                           id="blgc-text"      href="./">Bournemouth Lifeguard Corps</a></li>
+
+                <li><a class="nav-float-right nav-element"                          id="cta-donate"     href="https://www.paypal.com/fundraiser/hub">Donate</a></li>
+
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="hamburger-menu">                     <i class="fa-solid fa-bars"></i></a></li>
+
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="members-page"   href="./members">    <i class="fa-solid fa-user"></i> Members Page</a></li>
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="contact"        href="./contact">    <i class="fa-solid fa-phone"></i> Contact</a></li>
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="news"           href="./news">       <i class="fa-solid fa-newspaper"></i> News</a></li>
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="events"         href="./events">     <i class="fa-solid fa-calendar"></i> Events</a></li>
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="what-we-do"     href="./what-we-do"> <i class="fa-solid fa-life-ring"></i> What We Do</a></li>
+                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="about-us"       href="./about-us">   <i class="fa-solid fa-circle-info"></i> About Us</a></li>
+            </ul>
+        </nav>
+        <div class="carousel-container">
+            <div class="carousel-item fade">
+                <div class="carousel-text-container">
+                    <div class="carousel-text" id="we-are"><b>We Are</b></div>
+                    <div class="carousel-text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                    <div class="carousel-text" id="carousel-text">- Saving Lives Since 1965! -</div>
+                    <div class="carousel-text" id="learn-more-button"><button>Learn More</button></div>
+                    <img src="./img/carousel-1.jpg">
+                </div>
+            </div>
+            <div class="carousel-item fade">
+                <div class="carousel-text-container">
+                    <div class="carousel-text" id="we-are"><b>We Are</b></div>
+                    <div class="carousel-text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                    <div class="carousel-text" id="carousel-text">- Always Ready, Always Prepared -</div>
+                    <div class="carousel-text" id="learn-more"><button>Learn More</button></div>
+                </div>
+                <img src="./img/carousel-2.jpg">
+            </div>
+            <div class="carousel-item fade">
+                <div class="text" id="we-are"><b>We Are</b></div>
+                <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                <div class="text" id="carousel-text">- Specialist Equipment -</div>
+                <div class="text" id="learn-more"><button>Learn More</button></div>
+                <img src="./img/carousel-3.jpg">
+            </div>
+            <div class="carousel-item fade">
+                <div class="text" id="we-are"><b>We Are</b></div>
+                <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                <div class="text" id="carousel-text">- Precise Practice -</div>
+                <div class="text" id="learn-more"><button>Learn More</button></div>
+                <img src="./img/carousel-4.jpeg">
+            </div>
+            <div class="carousel-item fade">
+                <div class="text" id="we-are"><b>We Are</b></div>
+                <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                <div class="text" id="carousel-text">- Expert Instructors -</div>
+                <div class="text" id="learn-more"><button>Learn More</button></div>
+                <img src="./img/carousel-5.jpg">
+            </div>
+            <div class="carousel-item fade">
+                <div class="text" id="we-are"><b>We Are</b></div>
+                <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                <div class="text" id="carousel-text">- Looking Professional -</div>
+                <div class="text" id="learn-more"><button>Learn More</button></div>
+                <img src="./img/carousel-6.jpg">
+            </div>
+            <div class="carousel-item fade">
+                <div class="text" id="we-are"><b>We Are</b></div>
+                <div class="text" id="bournemouth-lifeguard-corps"><b>Bournemouth Lifeguard Corps</b></div>
+                <div class="text" id="carousel-text">- Sharing and Learning with Other Clubs -</div>
+                <div class="text" id="learn-more"><button>Learn More</button></div>
+                <img src="./img/carousel-7.jpg">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("carousel-item");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+        <div class="what-we-do-container">
+            <h1 id="wwd-text">What we do</h1>
+            <div class="what-we-do-tile">
+                <h3>Beach Training</h3>
+                <img src="./img/beach-training.jpeg">
+                <p>We train regularly throughout the summer months with all our members having access to multiple sessions a week in which we teach a variety of skills. This is all based at our beach based Club HQ @ Joseph Steps, Bournemouth. We also run winter training for our very keen adult members who each Sunday brave the cold water to keep fit.</p>
+            </div>
+            <div class="what-we-do-tile">
+                <h3>Pool Training</h3>
+                <img src="./img/pool-training.jpeg">
+                <p>As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday’s with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up.</p>
+            </div>
+            <div class="what-we-do-tile">
+                <h3>IRB Training</h3>
+                <img src="./img/irb-training.jpg">
+            </div>
+        </div>
+        <div class="about-us">
+            <img src="./img/carousel-1.jpg">
+            <h1>About Us</h1>
+            <p>Bournemouth Lifeguard Corps was founded in 1965, moved to Durley Chine in 1967, became a registered charity in 2016 and moved from Durley Chine to Jospeh Steps in 2020.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="news-events">
+            <div id="news">
+                <h1>Development Begins</h1>
+                <p>News</p>
+                <img src="./img/development-begins.jpg">
+                <p>Development has finally begun on our clus new facility at Josephs steps...</p>
+                <button>Read More</button>
+            </div>
+            <div id="event">
+                <h1>Speeds '24</h1>
+                <p>Event</p>
+                <p>12-13th March 2024</p>
+                <img src="./img/speeds-24.jfif">
+                <p>Speeds '24 will be helf at the Sandwell Aquatics Cente in Birmingham. For more....</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+            <p>Prefix</p>
+            <input />
+            <p>First Name</p>
+            <input />
+            <p>Last Name</p>
+            <input />
+            <p>Email Address</p>
+            <input />
+            <p>Subject</p>
+            <input />
+            <p>Message</p>
+            <input />
+            <button>Submit</button>
+            <img src="./img/carousel-1.jpg">
+        </div>
+        <div class="footer">
+            <img src="./img/logo.png" alt="BLGC Logo">
+            <p>Bournemouth Lifegaurd Corps</p>
+            <p>Bournemouth Lifeguard Corps is a charity registered in England and Wales. Registered Charity number: 1166158. Registered address: C/O BH Live Active Stokewood, Stoke Wood Rd, Bournemouth BH3 7ND</p>
+            <p>(c) BLGC 2023</p>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-x-twitter"></i></a>
+            <button>Donate Here</button>
+            <p>What we do</p>
+            <ul>
+                <li>Beach Training</li>
+                <li>Pool Training</li>
+                <li>IRB Training</li>
+                <li>Competitions</li>
+                <li>Events</li>
+            </ul>
+            <p>About Us</p>
+            <ul>
+                <li>Our Past</li>
+                <li>Our Future</li>
+            </ul>
+            <p>News + Events</p>
+            <ul>
+                <li>Development Begins</li>
+                <li>Speeds '24</li>
+            </ul>
+        </div>
     </body>
 </html>

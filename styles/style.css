@@ -3,46 +3,12 @@ body {
     overflow-x: hidden;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-    background-color: white;
-    border-bottom: solid 5px black;
+* {
+    box-sizing: border-box
 }
-  
-.nav-left {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 5px 8px;
-    text-decoration: none;
+.mySlides {
+    display: none;
 }
-
-.nav-right {
-    float: right;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin: auto;
-}
-
-.nav-right:hover {
-    background-color: #f1f1f1;
-}
-
-#donate {
-    background-color: red;
-}
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
 
 .slideshow-container img {
     object-fit: cover;
@@ -121,48 +87,30 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 #wwd-text {
-    text-decoration: underline;
     text-align: center;
+    text-decoration: underline;
 }
 
 .what-we-do-container {
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
+    padding: 10px
 }
 
 .what-we-do-tile {
-    flex: 1;
-    padding: 20px; /* Adjust the padding as needed */
-    box-sizing: border-box; /* Ensures padding is included in the width */
-    margin: 0 20px;
-    width: 30%;
+    width: 33.3%;
+    float: left;
     text-align: center;
-    border-radius: 25px;
+    border: solid 5px black;
 }
-
-#pool-training {
-    background-color: #50a3d7;
-}
-#beach-training {
-    background-color: #ef877e;
-}
-#irb-training {
-    background-color: #fcde5a;
-}
-
 
 .what-we-do-tile img {
     object-fit: cover;
-    border-radius: 25px;
     height: 200px;
     width: 95%;
 }
-.what-we-do-container button {
-    background-color: white;
-    padding: 15px;
-    border-radius: 25px;
+
+.about-us img {
+    width: 50%;
+    object-fit: cover;
 }
 
 @keyframes fade {
@@ -170,7 +118,19 @@ body {font-family: Verdana, sans-serif; margin:0}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+/* Media query for medium screens */
+@media screen and (max-width: 1050px) {
+    /* Show the burger menu icon */
+    #burger {
+        display: block;
+    }
+
+    /* Hide the navigation menu */
+    .nav-right {
+        display: none;
+    }
+
+    .what-we-do-tile {
+        width: 100%;
+    }
 }

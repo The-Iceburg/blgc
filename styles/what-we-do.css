@@ -1,0 +1,28 @@
+
+#wwd-text {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.what-we-do-container {
+    padding: 10px
+}
+
+.what-we-do-tile {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+    border: solid 5px black;
+}
+
+.what-we-do-tile img {
+    object-fit: cover;
+    height: 200px;
+    width: 95%;
+}
+/* Media query for medium screens */
+@media screen and (max-width: 1050px) {
+    .what-we-do-tile {
+        width: 100%;
+    }
+}
