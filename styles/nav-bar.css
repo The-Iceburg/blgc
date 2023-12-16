@@ -41,6 +41,10 @@
     padding: 8px 8px;
 }
 
+#blgc-text {
+    padding: 4px 4px;
+}
+
 /* Elements which change when hovered */
 
 .nav-hoverable:hover {
@@ -53,6 +57,10 @@
 /* Hamburger Menu (for smaller devices) */
 
 #hamburger-menu {
+    display: none;
+}
+
+#members-page-icon {
     display: none;
 }
 
@@ -71,6 +79,10 @@
 
     /* Show the burger menu icon */
     #hamburger-menu {
+        display: block;
+    }
+
+    #members-page-icon {
         display: block;
     }
 
