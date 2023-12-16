@@ -2,10 +2,12 @@
 #wwd-text {
     text-align: center;
     text-decoration: underline;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
 .what-we-do-container {
-    padding: 10px
+    padding: 0px 10px
 }
 
 .what-we-do-tile {
@@ -17,6 +19,20 @@
     text-align: center;
     border-radius: 25px;
     float: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.what-we-do-tile-head {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.what-we-do-tile-desc {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 #pool-training {
@@ -34,12 +50,19 @@
 
 .learn-more {
     background-color: #ffffff;
+    border-width: 0px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .what-we-do-tile img {
     object-fit: cover;
     height: 200px;
     width: 95%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* Media query for medium screens */
 @media screen and (max-width: 1050px) {

@@ -1,4 +1,37 @@
-.about-us img {
-    width: 50%;
-    object-fit: cover;
+.about-us {
+    width: 100%;
+    padding-top: 200px;
 }
+
+.about-us img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 16px;
+}
+
+#about-us-col-1 {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    background-color: aqua;
+}
+
+#about-us-col-2 {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+    background-color: aqua;
+}
+
+#about-us-col-2 h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+#about-us-col-2 p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
