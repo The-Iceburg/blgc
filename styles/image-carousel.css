@@ -16,29 +16,6 @@
     margin: auto;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    bottom: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    z-index: 1;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
 .carousel-text-container {
     position: absolute;
     text-align: center;
@@ -92,9 +69,4 @@
     to {
         opacity: 1
     }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .prev, .next {font-size: 11px}
 }
