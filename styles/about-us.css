@@ -47,5 +47,9 @@
     }
     #about-us-col-2 {
         width: 100%;
+        padding-top: 0;
+    }
+    #about-us-col-2 h1{
+        margin: 0;
     }
 }
