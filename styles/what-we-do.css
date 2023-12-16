@@ -1,24 +1,23 @@
 
 #wwd-text {
     text-align: center;
-    text-decoration: underline;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
 }
 
 .what-we-do-container {
-    padding: 0px 10px
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .what-we-do-tile {
-    flex: 1;
     padding: 20px; /* Adjust the padding as needed */
     box-sizing: border-box; /* Ensures padding is included in the width */
     margin: 0 20px;
     width: 30%;
     text-align: center;
     border-radius: 25px;
-    float: left;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
 }

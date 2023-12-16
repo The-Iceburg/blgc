@@ -1,11 +1,15 @@
 .about-us {
     width: 100%;
-    padding-top: 200px;
+    margin-top: 32px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF9F6;
+    
 }
 
 .about-us img {
     width: 95%;
-    height: 300px;
     object-fit: cover;
     border-radius: 25px;
     padding: 16px;
@@ -14,16 +18,13 @@
 #about-us-col-1 {
     width: 50%;
     float: left;
-    margin-top: 30px;
     text-align: center;
-    background-color: aqua;
 }
 
 #about-us-col-2 {
     width: 50%;
     float: left;
-    margin-top: 30px;
-    background-color: aqua;
+    padding: 16px;
 }
 
 #about-us-col-2 h1{
