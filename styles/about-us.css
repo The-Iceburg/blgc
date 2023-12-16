@@ -10,6 +10,7 @@
 
 .about-us img {
     width: 95%;
+    height: 400px;
     object-fit: cover;
     border-radius: 25px;
     padding: 16px;
@@ -36,3 +37,15 @@
     font-weight: 400;
 }
 
+@media screen and (max-width: 900px) {
+    .about-us {
+        display: grid;
+        margin-top: 16px;
+    }
+    #about-us-col-1 {
+        width: 100%;
+    }
+    #about-us-col-2 {
+        width: 100%;
+    }
+}

@@ -9,6 +9,7 @@
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .what-we-do-tile {
@@ -64,8 +65,21 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* Media query for medium screens */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 900px) {
     .what-we-do-tile {
-        width: 100%;
+        width: 90%;
+        margin: 5%;
+    }
+    .what-we-do-container {
+        display: block;
+    }
+    #pool-training {
+        box-shadow: rgba(80, 163, 215, 0.4) 0px 5px, rgba(80, 163, 215, 0.3) 0px 10px, rgba(80, 163, 215, 0.2) 0px 15px, rgba(80, 163, 215, 0.1) 0px 20px, rgba(80, 163, 215, 0.05) 0px 25px;
+    }
+    #beach-training {
+        box-shadow: rgba(239, 135, 126, 0.4) 0px 5px, rgba(239, 135, 126, 0.3) 0px 10px, rgba(239, 135, 126, 0.2) 0px 15px, rgba(239, 135, 126, 0.1) 0px 20px, rgba(239, 135, 126, 0.05) 0px 25px;
+    }
+    #irb-training {
+        box-shadow: rgba(252, 222, 90, 0.4) 0px 5px, rgba(252, 222, 90, 0.3) 0px 10px, rgba(252, 222, 90, 0.2) 0px 15px, rgba(252, 222, 90, 0.1) 0px 20px, rgba(252, 222, 90, 0.05) 0px 25px;
     }
 }
