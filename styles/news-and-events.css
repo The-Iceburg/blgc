@@ -13,7 +13,7 @@
 
 .news-events img {
     width: 95%;
-    height: 50%;
+    height: 400px;
     object-fit: cover;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -32,4 +32,21 @@
 .nae-col h1 {
     font-weight: 900;
     margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .nae-col {
+        width: 90%;
+        margin: 5%;
+    }
+    .news-events {
+        display: grid;
+        width: 100%;
+    }
+    .news-events img {
+        width: 100%;
+    }
+    #event {
+        margin-top: 0;
+    }
 }

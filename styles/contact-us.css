@@ -68,3 +68,15 @@ textarea {
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@media screen and (max-width: 900px) {
+    .contact-form {
+        display: grid;
+    }
+    .contact-form img {
+        display: none;
+    }
+    .contact-us-col {
+        width: 100%;
+    }
+}
