@@ -1,0 +1,70 @@
+#contact-us-text {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact-form img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.contact-us-col {
+    width: 50%;
+}
+
+#contact-us-col-1 {
+    padding: 0px 32px;
+}
+
+.row-1-element, .row-2-element {
+    width: 30%;
+    text-align: left;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-3-element, .row-4-element {
+    width: 47%;
+    text-align: left;
+}
+
+.row-5-element, .row-6-element {
+    width: 100%;
+    text-align: left;
+}
+
+.input {
+    padding: 8px;
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#message {
+    border-bottom-right-radius: 0;
+}
+
+textarea {
+    height:75px;
+}
+
+#submit {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 25px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -1,0 +1,35 @@
+
+#nae-text {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.news-events {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-events img {
+    width: 95%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nae-col {
+    width: 50%;
+    margin: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    background-color: #FAF9F6;
+    border-radius: 25px;
+    padding: 32px;
+}
+
+.nae-col h1 {
+    font-weight: 900;
+    margin: 0;
+}
