@@ -1,4 +1,17 @@
 
+.notification-bar {
+    width: 100%;
+    text-align: center;
+    background-color: red;
+}
+.notification-bar p {
+    margin: 0;
+    padding: 8px;
+}
+.notification-bar a {
+    color: black;
+}
+
 /* The list of items within the navigation-bar */
 
 .nav-element-list {
