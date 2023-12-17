@@ -79,8 +79,8 @@
 
 @media screen and (max-width: 900px) {
     .page-heading h1 {
-        width: 85%;
-        margin-left: 7.5%;
+        width: 80%;
+        margin-left: 10%;
     }
     .page-content img {
         width: 90%;
