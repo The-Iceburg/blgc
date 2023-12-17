@@ -31,10 +31,14 @@
 #about-us-col-2 h1{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 #about-us-col-2 p{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 @media screen and (max-width: 900px) {
