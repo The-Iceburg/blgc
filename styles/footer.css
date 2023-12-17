@@ -6,6 +6,7 @@
     font-weight: 400;
     background-color: #FAF9F6;
     margin-top: 16px;
+    max-width: 100%;
 }
 
 .footer-container a {

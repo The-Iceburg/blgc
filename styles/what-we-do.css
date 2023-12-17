@@ -62,7 +62,7 @@
 
 .what-we-do-tile img {
     object-fit: cover;
-    height: 50%;
+    height: 200px;
     width: 95%;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
