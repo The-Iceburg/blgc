@@ -66,3 +66,31 @@
 .footer-head {
     font-weight: 900;
 }
+
+@media screen and (max-width: 1000px) {
+    #logo-footer {
+        padding: 16px 8px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #logo-footer {
+        padding: 8px;
+    }
+    .footer-col-3 {
+        display: none;
+    }
+    .footer-col-1 {
+        width: 80%;
+    }
+    .footer-col-2 {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #logo-footer {
+        padding: 16px 8px;
+    }
+}
