@@ -55,6 +55,9 @@
     padding: 8px 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
 
 .what-we-do-tile img {

@@ -45,15 +45,18 @@
     font-size: 2em;
 }
 
-.carousel-container button {
+.carousel-container a {
     background-color: #EF877E;
-    padding: 15px;
+    display: inline-block;
+    padding: 16px;
     border-radius: 25px;
-    margin-top: 16px;
     font-weight: 900;
-    border: 0px;
+    margin-top: 8px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
 }
 
 /* Fading animation */
