@@ -64,11 +64,16 @@ textarea {
 }
 
 #submit {
-    margin-top: 16px;
-    padding: 8px;
+    background-color: #ffffff;
+    border-width: 0px;
     border-radius: 25px;
-    border: 0px;
+    padding: 8px 16px;
+    margin-top: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
 }
 
 @media screen and (max-width: 900px) {
