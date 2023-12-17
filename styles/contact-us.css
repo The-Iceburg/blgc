@@ -1,6 +1,5 @@
 #contact-us-text {
     text-align: center;
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
     margin-bottom: 0;
 }
@@ -9,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .contact-form img {
@@ -59,6 +60,7 @@
 
 textarea {
     height:75px;
+    resize: vertical;
 }
 
 #submit {
