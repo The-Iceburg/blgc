@@ -1,13 +1,41 @@
+/***************/
+/* OUR HISTORY */
+/***************/
+
+/* Our History Content */
 .our-history-page-content {
     margin-top: 32px;
 }
 
-.our-history-page-content p {
+/* Our History Content Paragraphs */
+.our-history-page-content-paragraph {
     margin: 16px 7%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
+/* Our History Content Image Container */
+.our-history-image-container {
+    margin: 0% 7%;
+    position: relative;
+    display: inline-block;
+    width: 86%;
+}
+
+/* Our History Content Images */
+.our-history-image {
+    width: 47.5%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* Our History Content Images - New Club Hut */
+#our-history-club-hut-new {
+    float: right;
+}
+
+/* Our History Content Timelne Heading */
 #our-history-timeline-header {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
@@ -17,24 +45,10 @@
     text-align: center;
 }
 
-.our-history-page-content img {
-    width: 47.5%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 25px;
-}
+/* COLLAPSIBLE TIMELINES */
+/*************************/
 
-.our-history-image-container {
-    margin: 0% 7%;
-    position: relative;
-    display: inline-block;
-    width: 86%;
-}
-
-#our-history-club-hut-new {
-    float: right;
-}
-
+/* Our History Collapsible Timeline Sections */
 .our-history-collapsible {
     cursor: pointer;
     width: 86%;
@@ -49,10 +63,12 @@
     font-weight: 900;
 }
 
-.our-history-collapsible i{
+/* Our History Collapsible Timeline Sections icon */
+.fa-caret-down {
     float: right;
 }
 
+/* Our History Collapsible content */
 .our-history-collapsible-content {
     padding: 0 18px;
     background-color: white;
@@ -61,20 +77,33 @@
     transition: max-height 0.2s ease-out;
 }
 
-.our-history-collapsible-content p {
+/* Our History Collapsible content paragraphs */
+.our-history-collapsible-content-paragraph {
     margin-top: 0;
 }
 
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* Where the images squish */
 @media screen and (max-width: 900px) {
-    .our-history-page-content img {
+
+    /* Remove one of the images */
+    .our-history-image {
         width: 100%;
         position: relative;
         display: block;
     }
+
+    /* Remove one of the images */
     #our-history-club-hut-old {
         display: none;
     }
+
+    /* Adjust start of the content as heading width changes */
     .our-history-page-content {
         margin-top: 16px;
     }
+
 }
