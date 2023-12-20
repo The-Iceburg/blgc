@@ -1,40 +1,14 @@
-.page-heading {
-    text-align: center;
-}
-
-#page-head-image {
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 25px;
-    padding: 0;
-}
-
-.page-heading h1 {
-    position: absolute;
-    background-color: #FAF9F6;
-    padding: 16px;
-    border-radius: 25px;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: -50px;
-    margin-bottom: 66px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.page-content {
+.our-history-page-content {
     margin-top: 32px;
 }
 
-.page-content p {
+.our-history-page-content p {
     margin: 16px 7%;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
-#timeline-header {
+#our-history-timeline-header {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     margin-top: 24px;
@@ -43,25 +17,25 @@
     text-align: center;
 }
 
-.page-content img {
+.our-history-page-content img {
     width: 47.5%;
     height: 200px;
     object-fit: cover;
     border-radius: 25px;
 }
 
-.image-container {
+.our-history-image-container {
     margin: 0% 7%;
     position: relative;
     display: inline-block;
     width: 86%;
 }
 
-#club-hut-new {
+#our-history-club-hut-new {
     float: right;
 }
 
-.collapsible {
+.our-history-collapsible {
     cursor: pointer;
     width: 86%;
     margin: 0% 7%;
@@ -75,11 +49,11 @@
     font-weight: 900;
 }
 
-.collapsible i{
+.our-history-collapsible i{
     float: right;
 }
 
-.content {
+.our-history-collapsible-content {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -87,24 +61,20 @@
     transition: max-height 0.2s ease-out;
 }
 
-.content p {
+.our-history-collapsible-content p {
     margin-top: 0;
 }
 
 @media screen and (max-width: 900px) {
-    .page-content img {
+    .our-history-page-content img {
         width: 100%;
         position: relative;
         display: block;
     }
-    #club-hut-old {
+    #our-history-club-hut-old {
         display: none;
     }
-    .page-heading h1 {
-        position: relative;
-        margin-bottom: 0;
-    }
-    .page-content {
+    .our-history-page-content {
         margin-top: 16px;
     }
 }

@@ -1,0 +1,25 @@
+#general-page-heading {
+    text-align: center;
+}
+
+#general-page-heading-image {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    padding: 0;
+}
+
+#general-page-heading-heading {
+    position: absolute;
+    background-color: #FAF9F6;
+    padding: 16px;
+    border-radius: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: -50px;
+    margin-bottom: 66px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
