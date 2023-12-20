@@ -1,6 +1,20 @@
+<!--
+
+______                              _  ______         _____ _            _____         _
+| ___ \                            | | | ___ \       |_   _| |          |_   _|       | |
+| |_/ /____      _____ _ __ ___  __| | | |_/ /_   _    | | | |__   ___    | |  ___ ___| |__  _   _ _ __ __ _
+|  __/ _ \ \ /\ / / _ \ '__/ _ \/ _` | | ___ \ | | |   | | | '_ \ / _ \   | | / __/ _ \ '_ \| | | | '__/ _` |
+| | | (_) \ V  V /  __/ | |  __/ (_| | | |_/ / |_| |   | | | | | |  __/  _| || (_|  __/ |_) | |_| | | | (_| |
+\_|  \___/ \_/\_/ \___|_|  \___|\__,_| \____/ \__, |   \_/ |_| |_|\___|  \___/\___\___|_.__/ \__,_|_|  \__, |
+                                               __/ |                                                    __/ |
+                                              |___/                                                    |___/
+
+-->
+
 <!DOCTYPE html>
 <html>
 <head>
+
     <!-- Tab Styling -->
     <title>Bournemouth Lifeguard Corps</title>
     <link rel="icon" href="./img/logo.png">
@@ -8,12 +22,15 @@
     <!-- Responsive Design Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Page Styling -->
+    <!-- Font Awesome Import -->
     <script src="https://kit.fontawesome.com/7daaf9098f.js" crossorigin="anonymous"></script>
+
+    <!-- Font Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
 
+    <!-- Page Styling -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/nav-bar.css">
     <link rel="stylesheet" href="./styles/image-carousel.css">
@@ -25,180 +42,288 @@
 
 </head>
     <body>
-        <div class="notification-bar">
-            <p>This is an experimental version of the BLGC website, for the current website click <a href="https://bournemouthlifeguards.co.uk">here</a>. Otherwise feel free to have a look around and let us know what you think <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0HjUUyInBTnV-NOqs08G-fIlFTLJV0u1h2qmJCpeUZwxCnQ/viewform?usp=sf_link" target="_blank">here</a></p>
+
+        <!---------------------->
+        <!-- NOTIFICATION BAR -->
+        <!---------------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- general | used using the same styling throughout the website -->
+        <!-- notif-bar | this is the red notification bar at the top of the webpage -->
+        <!-- container | this is the container for the element not the element itself -->
+
+        <div id="general-notif-bar-container">
+            <p id="general-notif-bar-container-text">This is an experimental version of the BLGC website, for the current website click <a class="general-notif-bar-container-link" href="https://bournemouthlifeguards.co.uk">here</a>. Otherwise feel free to have a look around and let us know what you think <a  class="general-notif-bar-container-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc0HjUUyInBTnV-NOqs08G-fIlFTLJV0u1h2qmJCpeUZwxCnQ/viewform?usp=sf_link" target="_blank">here</a></p>
         </div>
-        <nav>
-            <ul class="nav-element-list">
-                <li><a class="nav-float-left nav-element"                           id="blgc-logo"           href="./"><img src="./img/logo.png" alt="BLGC Logo"></a></li>
-                <li><a class="nav-float-left nav-element"                           id="blgc-text"           href="./">Bournemouth<br>Lifeguard Corps</a></li>
 
-                <li><a class="nav-float-right nav-element"                          id="cta-donate"          href="https://www.paypal.com/fundraiser/hub" target="_blank">Donate</a></li>
+        <!-------------------->
+        <!-- NAVIGATION BAR -->
+        <!-------------------->
 
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="hamburger-menu">                     <i class="fa-solid fa-bars"></i></a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="members-page-icon"   href="./members">    <i class="fa-solid fa-user"></i></a></li>
+        <!-- Class Breakdown -->
+        <!--------------------->
 
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="members-page"        href="./members">    <i class="fa-solid fa-user"></i> Members Page</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="contact"             href="./contact">    <i class="fa-solid fa-phone"></i> Contact</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="news"                href="./news">       <i class="fa-solid fa-newspaper"></i> News</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="events"              href="./events">     <i class="fa-solid fa-calendar"></i> Events</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="what-we-do"          href="./what-we-do"> <i class="fa-solid fa-life-ring"></i> What We Do</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="about-us"            href="./about-us">   <i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <!-- general | used using the same styling throughout the website -->
+        <!-- nav-bar | this is the main navigation bar at the top of the page -->
+        <!-- container | this is the container for the element not the element itself -->
+
+        <!-- element-lsit | a list of elements in the nav bar -->
+
+        <!-- nav-element | an element in the list -->
+        <!-- general-nav-position-left | the nav element "floats" to the left of the nav bar -->
+        <!-- general-nav-position-right | the nav element "floats" to the right of the nav bar -->
+        <!-- general-nav-hoverable | this nav elements appearance changes when hovered-->
+        <!-- general-nav-width-restricted | this nav element is restricted by the inital width restriction (1100px) -->
+
+        <nav id="general-nav-bar-container">
+            <ul id="general-nav-bar-element-list">
+                <li><a class="general-nav-element general-nav-position-left"                                                     id="blgc-logo"           href="./"><img src="./img/logo.png" alt="BLGC Logo"></a></li>
+                <li><a class="general-nav-element general-nav-position-left"                                                     id="blgc-text"           href="./">Bournemouth<br>Lifeguard Corps</a></li>
+
+                <li><a class="general-nav-element general-nav-position-right"                                                    id="cta-donate"          href="https://www.paypal.com/fundraiser/hub" target="_blank">Donate</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable"                              id="hamburger-menu">                          <i class="fa-solid fa-bars"></i></a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable"                              id="members-page-icon"   href="./members">    <i class="fa-solid fa-user"></i></a></li>
+
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="members-page"        href="./members">    <i class="fa-solid fa-user"></i> Members Page</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="contact"             href="./contact">    <i class="fa-solid fa-phone"></i> Contact</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="news"                href="./news">       <i class="fa-solid fa-newspaper"></i> News</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="events"              href="./events">     <i class="fa-solid fa-calendar"></i> Events</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="what-we-do"          href="./what-we-do"> <i class="fa-solid fa-life-ring"></i> What We Do</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="about-us"            href="./about-us">   <i class="fa-solid fa-circle-info"></i> About Us</a></li>
             </ul>
         </nav>
-        <div class="carousel-container">
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Saving Lives Since 1965! -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+
+        <!-------------------->
+        <!-- IMAGE CAROUSEL -->
+        <!-------------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- home | styling exclusivly for the homepage -->
+        <!-- image-carousel | this is the home page image carousel -->
+        <!-- container | this is the container for the element not the element itself -->
+
+        <!-- item | an individual carousel slide -->
+        <!-- fade | slide has fade transition between iteself and the previous slide -->
+
+        <!-- text | the text that appears on the main carousel -->
+        <!-- button | interactive button -->
+        <!-- link | link to an internal or external page -->
+
+        <div id="home-image-carousel-container">
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Saving Lives Since 1965! -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link"  href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-1.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-1.jpg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Always Ready, Always Prepared -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Always Ready, Always Prepared -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-2.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-2.jpg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Specialist Equipment -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Specialist Equipment -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-3.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-3.jpg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Precise Practice -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Precise Practice -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-4.jpeg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-4.jpeg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Expert Instructors -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Expert Instructors -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-5.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-5.jpg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Looking Professional -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Looking Professional -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-6.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-6.jpg">
             </div>
-            <div class="carousel-item fade">
-                <div class="carousel-text-container">
-                    <div class="carousel-text" id="we-are">We Are</div>
-                    <div class="carousel-text" id="bournemouth-lifeguard-corps">Bournemouth Lifeguard Corps</div>
-                    <div class="carousel-text" id="carousel-text">- Sharing and Learning with Other Clubs -</div>
-                    <div class="carousel-text" id="learn-more-button"><a href="./about-us">Learn More</a></div>
+            <div class="home-image-carousel-item fade">
+                <div class="home-image-carousel-text-container">
+                    <div class="home-image-carousel-text" id="image-carousel-we-are-text">We Are</div>
+                    <div class="home-image-carousel-text" id="image-carousel-bournemouth-lifeguard-corps-text">Bournemouth Lifeguard Corps</div>
+                    <div class="home-image-carousel-text" id="image-carousel-carousel-text">- Sharing and Learning with Other Clubs -</div>
+                    <div class="home-image-carousel-text" id="image-carousel-learn-more-button"><a id="image-carousel-learn-more-button-link" href="./about-us">Learn More</a></div>
                 </div>
-                <img src="./img/carousel-7.jpg">
+                <img class="home-image-carousel-item-img" src="./img/carousel-7.jpg">
             </div>
         </div>
+
+        <!---------------------------------->
+        <!-- IMAGE CAROUSEL FUNCTIONALITY -->
+        <!---------------------------------->
+
         <script>
+
             let slideIndex = 0;
             showSlides();
 
             function showSlides() {
                 let i;
-                let slides = document.getElementsByClassName("carousel-item");
+                let slides = document.getElementsByClassName("home-image-carousel-item");
                 for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
+                    slides[i].style.display = "none";
                 }
                 slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
-                slides[slideIndex-1].style.display = "block";  
-                setTimeout(showSlides, 5000); // Change image every 5 seconds
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 5000);
             }
+
         </script>
 
-        <h1 id="wwd-text">What we do</h1>
+        <!---------------->
+        <!-- WHAT WE DO -->
+        <!---------------->
 
-        <div class="what-we-do-container">
-    
-            <!-- Beach Training - Picture of Cadets + Instructor in the sea - brief description - learn more button -->
+        <!-- Class Breakdown -->
+        <!--------------------->
 
-            <div id="beach-training" class="what-we-do-tile">
-                <h3 class="what-we-do-tile-head">Beach Training</h3>
-                <img src="./img/beach-training.jpeg">
-                <p class="what-we-do-tile-desc">We train regularly throughout the summer months with all our members having access to multiple sessions a week in which we teach a variety of skills. This is all based at our beach based Club HQ @ Joseph Steps, Bournemouth. We also run winter training for our very keen adult members who each Sunday brave the cold water to keep fit.</p>
-                <a class="learn-more" href="./what-we-do/beach-training">Learn More</a>
+        <!-- home | styling exclusivly for the homepage -->
+        <!-- what-we-do | this is the what we do section -->
+        <!-- container | this is the container for the element not the element itself -->
+
+        <!-- heading | the heading of the section -->
+
+        <!-- tile | a sub-section of the what-we-do section -->
+        <!-- desc | the of an element description -->
+        <!-- button | interactive button -->
+
+        <h1 id="home-what-we-do-heading">What we do</h1>
+        <div class="home-what-we-do-tile-container">
+            <div id="home-what-we-do-beach-training-tile" class="home-what-we-do-tile">
+                <h3 class="home-what-we-do-tile-heading">Beach Training</h3>
+                <img class="home-what-we-do-tile-image" src="./img/beach-training.jpeg">
+                <p class="home-what-we-do-tile-desc">We train regularly throughout the summer months with all our members having access to multiple sessions a week in which we teach a variety of skills. This is all based at our beach based Club HQ @ Joseph Steps, Bournemouth. We also run winter training for our very keen adult members who each Sunday brave the cold water to keep fit.</p>
+                <a class="home-what-we-do-learn-more-button" href="./what-we-do/beach-training">Learn More</a>
             </div>
-
-            <!-- Pool Training - Rookies training in the pool - brief description - learn more button -->
-
-            <div id="pool-training" class="what-we-do-tile">
-                <h3 class="what-we-do-tile-head">Pool Training</h3>
-                <img src="./img/pool-training.jpeg">
-                <p class="what-we-do-tile-desc">As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday's with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up. With dedicated instructors and expert kit, these sessions are a great chance to improve your lifesaving and competition skills</p>
-                <a class="learn-more" href="./what-we-do/pool-training">Learn More</a>
+            <div id="home-what-we-do-pool-training-tile" class="home-what-we-do-tile">
+                <h3 class="home-what-we-do-tile-heading">Pool Training</h3>
+                <img class="home-what-we-do-tile-image" src="./img/pool-training.jpeg">
+                <p class="home-what-we-do-tile-desc">As a club we train in a local swimming pool from September to July every year only stopping over Christmas and Easter. We train on Friday's with sessions starting at 19:30pm and finishing at 22:00pm. We cater for ages 8 years old and up. With dedicated instructors and expert kit, these sessions are a great chance to improve your lifesaving and competition skills</p>
+                <a class="home-what-we-do-learn-more-button" href="./what-we-do/pool-training">Learn More</a>
             </div>
-
-            <!-- IRB Training - IRB Closeup - brief description - learn more button -->
-
-            <div id="irb-training" class="what-we-do-tile">
-                <h3 class="what-we-do-tile-head">IRB Training</h3>
-                <img src="./img/irb-training.jpg">
-                <p class="what-we-do-tile-desc">Throughout the summer, on a Wednesday night, we train using our amazing inshore rescue boats. These sessions help the more experienced lifeguards at the club improve their IRB skills and knowledge to allow us to provide world-class water saftey cover at local events, such as the BHF pier to pier swim, and compete at an inernational level.</p>
-                <a class="learn-more" href="./what-we-do/irb-training">Learn More</a>
-            </div>
-
-        </div>
-        <div class="about-us">
-            <div id="about-us-col-1">
-                <img src="./img/carousel-1.jpg">
-            </div>
-            <div id="about-us-col-2">
-                <h1>About Us</h1>
-                <p>Bournemouth Lifeguard Corps was founded in 1965, moved to Durley Chine in 1967, became a registered charity in 2016 and moved from Durley Chine to Jospeh Steps in 2020. We are affiliated with the Royal Lifesaving Society (RLSS) who are the UK's leading provider of water safety and drowning prevention education and Surf Lifesaving Great Britain (SLSGB) whose aim is to help make our beaches safer and more enjoyable places for everyone. We also work closely with the Royal National Lifeboat Institute (RNLI), working professionally alongside them during major events such as the Bournemouth Air Festival and British Heart Foundation Pier to Pier Swim, for which we provide water safety cover.</p>
-                <a class="learn-more" href="./about-us">Learn More</a>
+            <div id="home-what-we-do-irb-training-tile" class="home-what-we-do-tile">
+                <h3 class="home-what-we-do-tile-heading">IRB Training</h3>
+                <img class="home-what-we-do-tile-image" src="./img/irb-training.jpg">
+                <p class="home-what-we-do-tile-desc">Throughout the summer, on a Wednesday night, we train using our amazing inshore rescue boats. These sessions help the more experienced lifeguards at the club improve their IRB skills and knowledge to allow us to provide world-class water saftey cover at local events, such as the BHF pier to pier swim, and compete at an inernational level.</p>
+                <a class="home-what-we-do-learn-more-button" href="./what-we-do/irb-training">Learn More</a>
             </div>
         </div>
-        <h1 id="nae-text">News & Events</h1>
-        <div class="news-events">
-            <div id="news" class="nae-col">
-                <h1>Development Begins</h1>
-                <p>News</p>
-                <img src="./img/development-begins.jpg">
-                <p>Development has finally begun on our club's new facility at Josephs steps! After moving to the facility in 2020 work has begun to develop a modern, sustainable design featuring dedicated training and operational rooms, equipment storage and changing facilities.</p>
-                <a class="learn-more" href="./news/article?id=001">Read More</a>
+
+        <!-------------->
+        <!-- ABOUT US -->
+        <!-------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- home | styling exclusivly for the homepage -->
+        <!-- about-us | this is the about-us section -->
+        <!-- container | this is the container for the element not the element itself -->
+        <!-- col | the column of the section -->
+
+        <!-- heading | the heading of the section -->
+        <!-- desc | the description -->
+        <!-- img | image -->
+        <!-- button | interactive button -->
+
+        <div id="home-about-us-container">
+            <div id="home-about-us-col-1">
+                <img id="home-about-us-img" src="./img/carousel-1.jpg">
             </div>
-            <div id="event" class="nae-col">
-                <h1>Speeds '24</h1>
-                <p>Event | 12-13th March 2024</p>
-                <img src="./img/speeds-24.jfif">
-                <p>Speeds is the largest competition of its kind in the UK and the events team at RLSS UK are delighted to have secured Sandwell Aquatic Centre for the 2024 competition, giving athletes the amazing opportunity to swim in the Birmingham Commonwealth Games Pool!</p>
-                <a class="learn-more" href="./event/article?id=001">Read More</a>
+            <div id="home-about-us-col-2">
+                <h1 id="home-about-us-heading">About Us</h1>
+                <p id="home-about-us-desc">Bournemouth Lifeguard Corps was founded in 1965, moved to Durley Chine in 1967, became a registered charity in 2016 and moved from Durley Chine to Jospeh Steps in 2020. We are affiliated with the Royal Lifesaving Society (RLSS) who are the UK's leading provider of water safety and drowning prevention education and Surf Lifesaving Great Britain (SLSGB) whose aim is to help make our beaches safer and more enjoyable places for everyone. We also work closely with the Royal National Lifeboat Institute (RNLI), working professionally alongside them during major events such as the Bournemouth Air Festival and British Heart Foundation Pier to Pier Swim, for which we provide water safety cover.</p>
+                <a id="home-about-us-learn-more-button" href="./about-us">Learn More</a>
             </div>
         </div>
-        <div class="contact-form">
-            <div class="contact-us-col" id="contact-us-col-1">
-                <h1 id="contact-us-text">Contact Us</h1>
+
+        <!------------------->
+        <!-- NEWS + EVENTS -->
+        <!------------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- home | styling exclusivly for the homepage -->
+        <!-- nae | news and events -->
+        <!-- container | this is the container for the element not the element itself -->
+        <!-- col | the column of the section -->
+
+        <!-- heading | the heading of the section -->
+        <!-- desc | the description -->
+        <!-- button | interactive button -->
+        <!-- img | image -->
+        <!-- tags | article tags -->
+
+        <h1 id="home-nae-heading">News & Events</h1>
+        <div id="home-nae-container">
+            <div id="home-news-container" class="home-nae-col">
+                <h1 class="home-nae-col-heading">Development Begins</h1>
+                <p class="home-nae-col-tags">News</p>
+                <img class="home-nae-col-img" src="./img/development-begins.jpg">
+                <p class="home-nae-col-desc">Development has finally begun on our club's new facility at Josephs steps! After moving to the facility in 2020 work has begun to develop a modern, sustainable design featuring dedicated training and operational rooms, equipment storage and changing facilities.</p>
+                <a class="home-nae-col-read-more-button" href="./news/article?id=001">Read More</a>
+            </div>
+            <div id="home-event-container" class="home-nae-col">
+                <h1 class="home-nae-col-heading">Speeds '24</h1>
+                <p class="home-nae-col-tags">Event | 12-13th March 2024</p>
+                <img class="home-nae-col-img" src="./img/speeds-24.jfif">
+                <p class="home-nae-col-desc">Speeds is the largest competition of its kind in the UK and the events team at RLSS UK are delighted to have secured Sandwell Aquatic Centre for the 2024 competition, giving athletes the amazing opportunity to swim in the Birmingham Commonwealth Games Pool!</p>
+                <a class="home-nae-col-read-more-button" href="./event/article?id=001">Read More</a>
+            </div>
+        </div>
+
+        <!------------------>
+        <!-- CONTACT FORM -->
+        <!------------------>
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <div id="home-contact-form-container">
+            <div class="home-contact-us-col" id="home-contact-us-col-1">
+                <h1 id="home-contact-us-heading">Contact Us</h1>
                 <p>Please fill out the form below and your query will be passed to the relevant committee member</p>
                 <form action="contact-us-submit" method="post">
-                    <div class="row-1">
-                        <p class="row-1-element">Title</p>
-                        <p class="row-1-element">First Name</p>
-                        <p class="row-1-element">Last Name</p>
+                    <div id="home-contact-us-row-1">
+                        <p class="home-contact-us-row-1-element">Title</p>
+                        <p class="home-contact-us-row-1-element">First Name</p>
+                        <p class="home-contact-us-row-1-element">Last Name</p>
                     </div>
-                    <div class="row-2">
-                        <select class="row-2-element input" id="prefix">
+                    <div id="home-contact-us-row-2">
+                        <select class="home-contact-us-row-2-element home-contact-us-input" id="prefix">
                             <option value="none">None</option>
                             <option value="mr">Mr</option>
                             <option value="mrs">Mrs</option>
@@ -206,16 +331,16 @@
                             <option value="miss">Miss</option>
                             <option value="dr">Dr</option>
                         </select>
-                        <input class="row-2-element input" type="text" id="first-name" required>
-                        <input class="row-2-element input" type="text" id="last-name" required>
+                        <input class="home-contact-us-row-2-element home-contact-us-input" type="text" id="first-name" required>
+                        <input class="home-contact-us-row-2-element home-contact-us-input" type="text" id="last-name" required>
                     </div>
-                    <div class="row-3">
-                        <p class="row-3-element">Email Address</p>
-                        <p class="row-3-element">Subject</p>
+                    <div id="home-contact-us-row-3">
+                        <p class="home-contact-us-row-3-element">Email Address</p>
+                        <p class="home-contact-us-row-3-element">Subject</p>
                     </div>
-                    <div class="row-4">
-                        <input class="row-4-element input" type="email" id="email-address" required>
-                        <select class="row-4-element input" id="subject">
+                    <div id="home-contact-us-row-4">
+                        <input class="home-contact-us-row-4-element home-contact-us-input" type="email" id="email-address" required>
+                        <select class="home-contact-us-row-4-element home-contact-us-input" id="subject">
                             <option value="general" selected>General</option>
                             <option value="adults">Adults & Masters (18+)</option>
                             <option value="cadets">Cadets (13-18)</option>
@@ -230,21 +355,29 @@
                             <option value="safeguarding">Safeguarding</option>
                         </select>
                     </div>
-                    <div class="row-5">
-                        <p class="row-5-element">Message</p>
+                    <div id="home-contact-us-row-5">
+                        <p class="home-contact-us-row-5-element">Message</p>
                     </div>
-                    <div class="row-6">
-                        <textarea class="row-6-element input" type="text" id="message" required></textarea>
+                    <div id="home-contact-us-row-6">
+                        <textarea class="home-contact-us-row-6-element home-contact-us-input" type="text" id="message" required></textarea>
                     </div>
-                    <div class="row-7">
-                        <input class="row-7-element" type="submit" id="submit" value="Submit">
+                    <div id="home-contact-us-row-7">
+                        <input class="home-contact-us-row-7-element" type="submit" id="submit" value="Submit">
                     </div>
                 </form>
             </div>
-            <div class="contact-us-col" id="contact-us-col-2">
-                <img src="./img/carousel-6.jpg">
+            <div class="home-contact-us-col" id="home-contact-us-col-2">
+                <img id="home-contact-us-img" src="./img/carousel-6.jpg">
             </div>
         </div>
+
+        <!---------------->
+        <!-- WHAT WE DO -->
+        <!---------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
         <div class="footer-container">
             <div class="footer-col-1">
                 <div class="logo-and-text-container">
