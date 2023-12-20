@@ -1,10 +1,40 @@
-#contact-us-text {
+/**************/
+/* CONTACT US */
+/**************/
+
+/* Contact Us Heading */
+#home-contact-us-heading {
     text-align: center;
     font-weight: 900;
     margin-bottom: 0;
 }
 
-.contact-form {
+/* Contact Us Column */
+.home-contact-us-col {
+    width: 50%;
+}
+
+/* Column 2 */
+/************/
+
+/* Contact Us Image */
+#home-contact-us-img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+/* Column 1 */
+/************/
+
+/* Column 1 */
+#home-contact-us-col-1 {
+    padding: 0px 32px;
+}
+
+/* Contact Us Form Container */
+#home-contact-form-container {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -12,57 +42,47 @@
     font-weight: 400;
 }
 
-.contact-form img {
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-}
-.contact-us-col {
-    width: 50%;
-}
-
-#contact-us-col-1 {
-    padding: 0px 32px;
-}
-
-.row-1-element, .row-2-element {
+/* Contact Us Form Row Elements */
+.home-contact-us-row-1-element, .home-contact-us-row-2-element {
     width: 30%;
     text-align: left;
 }
 
-.row-1, .row-2, .row-3, .row-4, .row-5, .row-6 {
+/* Contact Us Form Rows */
+#home-contact-us-row-1, #home-contact-us-row-2, #home-contact-us-row-3, #home-contact-us-row-4, #home-contact-us-row-5, #home-contact-us-row-6 {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.row-3-element, .row-4-element {
+/* Contact Us Form Row Elements */
+.home-contact-us-row-3-element, .home-contact-us-row-4-element {
     width: 47%;
     text-align: left;
 }
 
-.row-5-element, .row-6-element {
+/* Contact Us Form Row Elements */
+.home-contact-us-row-5-element, .home-contact-us-row-6-element {
     width: 100%;
     text-align: left;
 }
 
-.input {
+/* Contact Us Input Boxes Universal Styling */
+.home-contact-us-input {
     padding: 8px;
     border-radius: 25px;
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Text Area Styling */
 #message {
     border-bottom-right-radius: 0;
-}
-
-textarea {
     height:75px;
     resize: vertical;
 }
 
+/* Submit Button Styling */
 #submit {
     background-color: #ffffff;
     border-width: 0px;
@@ -76,14 +96,26 @@ textarea {
     font-weight: 900;
 }
 
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* For screens where the form appear squished */
 @media screen and (max-width: 900px) {
-    .contact-form {
+
+    /* Conact form displays independent of the img */
+    #home-contact-form-container {
         display: block;
     }
-    .contact-form img {
+
+    /* Hides the image */
+    #home-contact-us-img {
         display: none;
     }
-    .contact-us-col {
+
+    /* Makes the columns the width of the page */
+    .home-contact-us-col {
         width: 100%;
     }
+
 }

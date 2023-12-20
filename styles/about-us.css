@@ -1,14 +1,29 @@
-.about-us {
+/************/
+/* ABOUT US */
+/************/
+
+/* Container of the about-us section */
+#home-about-us-container {
     width: 100%;
     margin-top: 32px;
     padding: 16px;
     display: flex;
     justify-content: space-between;
     background-color: #FAF9F6;
-    
 }
 
-.about-us img {
+/* ABOUT US COLUMN 1 */
+/*********************/
+
+/* Column 1 layout */
+#home-about-us-col-1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+/* About us image in column 1 */
+#home-about-us-img {
     width: 95%;
     height: 350px;
     object-fit: cover;
@@ -16,44 +31,72 @@
     padding: 16px;
 }
 
-#about-us-col-1 {
-    width: 50%;
-    float: left;
-    text-align: center;
-}
+/* ABOUT US COLUMN 2 */
+/*********************/
 
-#about-us-col-2 {
+/* Column 2 layout */
+#home-about-us-col-2 {
     width: 50%;
     float: left;
     padding: 16px;
 }
 
-#about-us-col-2 h1{
+/* About Us heading */
+#home-about-us-heading {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 32px;
 }
-#about-us-col-2 p{
+
+/* About Us Description */
+#home-about-us-desc {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 32px;
 }
 
+/* About Us Learn More Button */
+#home-about-us-learn-more-button {
+    background-color: #ffffff;
+    border-width: 0px;
+    border-radius: 25px;
+    padding: 8px 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* For screens where the about-us columns appear squished */
 @media screen and (max-width: 900px) {
-    .about-us {
+
+    /* Container of the about-us section */
+    #home-about-us-container {
         display: grid;
         margin-top: 16px;
     }
-    #about-us-col-1 {
+
+    /* Column 1 layout */
+    #home-about-us-col-1 {
         width: 100%;
     }
-    #about-us-col-2 {
+
+    /* Column 2 layout */
+    #home-about-us-col-2 {
         width: 100%;
         padding-top: 0;
     }
-    #about-us-col-2 h1{
+
+    /* About Us heading */
+    #home-about-us-heading {
         margin: 0;
     }
+
 }
