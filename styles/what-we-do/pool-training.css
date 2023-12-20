@@ -2,25 +2,30 @@
     text-align: center;
 }
 
-.pool-page-heading img {
+#page-head-image {
     width: 90%;
     height: 300px;
     object-fit: cover;
     border-radius: 25px;
-    z-index: 0;
+    padding: 0;
 }
 
 .pool-page-heading h1 {
-    position:relative;
+    position: absolute;
     background-color: #FAF9F6;
     padding: 16px;
-    width: 25%;
     border-radius: 25px;
     margin-left: 7%;
-    margin-top: -4%;
+    margin-right: 7%;
+    margin-top: -50px;
+    margin-bottom: 66px;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pool-page-content {
+    margin-top: 32px;
 }
 
 .pool-page-content p {
