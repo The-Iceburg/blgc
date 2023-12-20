@@ -21,27 +21,58 @@
 
 </head>
     <body>
-        <nav>
-            <div class="notification-bar">
-                <p>This is an experimental version of the BLGC website, for the current website click <a href="https://bournemouthlifeguards.co.uk">here</a>. Otherwise feel free to have a look around and let us know what you think <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0HjUUyInBTnV-NOqs08G-fIlFTLJV0u1h2qmJCpeUZwxCnQ/viewform?usp=sf_link" target="_blank">here</a></p>
-            </div>
-            <ul class="nav-element-list">
-                <li><a class="nav-float-left nav-element"                           id="blgc-logo"           href="../"><img src="../img/logo.png" alt="BLGC Logo"></a></li>
-                <li><a class="nav-float-left nav-element"                           id="blgc-text"           href="../">Bournemouth<br>Lifeguard Corps</a></li>
+        <!---------------------->
+        <!-- NOTIFICATION BAR -->
+        <!---------------------->
 
-                <li><a class="nav-float-right nav-element"                          id="cta-donate"          href="https://www.paypal.com/fundraiser/hub" target="_blank">Donate</a></li>
+        <!-- Class Breakdown -->
+        <!--------------------->
 
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="hamburger-menu">                     <i class="fa-solid fa-bars"></i></a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="members-page-icon"   href="../members">    <i class="fa-solid fa-user"></i></a></li>
+        <!-- general | used using the same styling throughout the website -->
+        <!-- notif-bar | this is the red notification bar at the top of the webpage -->
+        <!-- container | this is the container for the element not the element itself -->
 
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="members-page"        href="../members">    <i class="fa-solid fa-user"></i> Members Page</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="contact"             href="../contact">    <i class="fa-solid fa-phone"></i> Contact</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="news"                href="../news">       <i class="fa-solid fa-newspaper"></i> News</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="events"              href="../events">     <i class="fa-solid fa-calendar"></i> Events</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="what-we-do"          href="../what-we-do"> <i class="fa-solid fa-life-ring"></i> What We Do</a></li>
-                <li><a class="nav-float-right nav-element nav-hoverable nav-hidden" id="about-us"            href="../about-us">   <i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <div id="general-notif-bar-container">
+            <p id="general-notif-bar-container-text">This is an experimental version of the BLGC website, for the current website click <a class="general-notif-bar-container-link" href="https://bournemouthlifeguards.co.uk">here</a>. Otherwise feel free to have a look around and let us know what you think <a  class="general-notif-bar-container-link" href="https://docs.google.com/forms/d/e/1FAIpQLSc0HjUUyInBTnV-NOqs08G-fIlFTLJV0u1h2qmJCpeUZwxCnQ/viewform?usp=sf_link" target="_blank">here</a></p>
+        </div>
+
+        <!-------------------->
+        <!-- NAVIGATION BAR -->
+        <!-------------------->
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- general | used using the same styling throughout the website -->
+        <!-- nav-bar | this is the main navigation bar at the top of the page -->
+        <!-- container | this is the container for the element not the element itself -->
+
+        <!-- element-lsit | a list of elements in the nav bar -->
+
+        <!-- nav-element | an element in the list -->
+        <!-- general-nav-position-left | the nav element "floats" to the left of the nav bar -->
+        <!-- general-nav-position-right | the nav element "floats" to the right of the nav bar -->
+        <!-- general-nav-hoverable | this nav elements appearance changes when hovered-->
+        <!-- general-nav-width-restricted | this nav element is restricted by the inital width restriction (1100px) -->
+
+        <nav id="general-nav-bar-container">
+            <ul id="general-nav-bar-element-list">
+                <li><a class="general-nav-element general-nav-position-left"                                                     id="blgc-logo"           href="../"><img src="../img/logo.png" alt="BLGC Logo"></a></li>
+                <li><a class="general-nav-element general-nav-position-left"                                                     id="blgc-text"           href="../">Bournemouth<br>Lifeguard Corps</a></li>
+
+                <li><a class="general-nav-element general-nav-position-right"                                                    id="cta-donate"          href="https://www.paypal.com/fundraiser/hub" target="_blank">Donate</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable"                              id="hamburger-menu">                          <i class="fa-solid fa-bars"></i></a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable"                              id="members-page-icon"   href="../members">    <i class="fa-solid fa-user"></i></a></li>
+
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="members-page"        href="../members">    <i class="fa-solid fa-user"></i> Members Page</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="contact"             href="../contact">    <i class="fa-solid fa-phone"></i> Contact</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="news"                href="../news">       <i class="fa-solid fa-newspaper"></i> News</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="events"              href="../events">     <i class="fa-solid fa-calendar"></i> Events</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="what-we-do"          href="../what-we-do"> <i class="fa-solid fa-life-ring"></i> What We Do</a></li>
+                <li><a class="general-nav-element general-nav-position-right general-nav-hoverable general-nav-width-restricted" id="about-us"            href="../about-us">   <i class="fa-solid fa-circle-info"></i> About Us</a></li>
             </ul>
         </nav>
+
         <div class="page-heading">
             <img id="page-head-image" src="../img/our-history.jpeg" alt="Club HQ from the 70's">
             <h1>Our History</h1>
@@ -129,56 +160,75 @@
                 }
             </script>
         </div>
-        <div class="footer-container">
-            <div class="footer-col-1">
-                <div class="logo-and-text-container">
-                    <img id="logo-footer" src="../img/logo.png" alt="BLGC Logo">
-                    <div class="footer-head"><p id="logo-text-footer">Bournemouth Lifeguard Corps</p></div>
+
+        <!------------>
+        <!-- FOOTER -->
+        <!------------>
+
+        <!-- Class Breakdown -->
+        <!--------------------->
+
+        <!-- general | used using the same styling throughout the website -->
+        <!-- footer | this is the main footer at the bottom of the page -->
+        <!-- container | this is the container for the element not the element itself -->
+        <!-- col | the column of the section -->
+
+        <!-- link | an internal or external link -->
+        <!-- heading | the heading of a list of links -->
+        <!-- list | a list of links -->
+        <!-- logo | logo -->
+        <!-- text | text -->
+
+        <div id="general-footer-container">
+            <div id="general-footer-col-1">
+                <div id="general-footer-logo-and-text-container">
+                    <img id="general-footer-logo" src="../img/logo.png" alt="BLGC Logo">
+                    <div><p id="general-footer-text">Bournemouth Lifeguard Corps</p></div>
                 </div>
-                <p>Bournemouth Lifeguard Corps is a charity registered in England and Wales. Registered Charity number: 1166158. Registered address: C/O BH Live Active Stokewood, Stoke Wood Rd, Bournemouth BH3 7ND</p>
-                <p><i class="fa fa-copyright"></i> BLGC 2023 | Powered by <a href="https://github.com/The-Iceburg" target="_blank">TheIceburg</a></p>
+                <p class="general-footer-col-1-text">Bournemouth Lifeguard Corps is a charity registered in England and Wales. Registered Charity number: 1166158. Registered address: C/O BH Live Active Stokewood, Stoke Wood Rd, Bournemouth BH3 7ND</p>
+                <p class="general-footer-col-1-text"><i class="fa fa-copyright"></i> BLGC 2023 | Powered by <a class="general-footer-link" href="https://github.com/The-Iceburg" target="_blank">TheIceburg</a></p>
             </div>
-            <div class="footer-col-2">
-                <a href="https://www.instagram.com/blgc_official/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a><br>
-                <a href="https://www.facebook.com/bournemouthlifeguards/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a><br>
-                <a href="https://www.youtube.com/channel/UCCxtDBfImbV32PS7xtLJz_A" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a><br>
-                <a href="https://twitter.com/blgc_official" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+            <div id="general-footer-col-2">
+                <a class="general-footer-link" href="https://www.instagram.com/blgc_official/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a><br>
+                <a class="general-footer-link" href="https://www.facebook.com/bournemouthlifeguards/" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a><br>
+                <a class="general-footer-link" href="https://www.youtube.com/channel/UCCxtDBfImbV32PS7xtLJz_A" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a><br>
+                <a class="general-footer-link" href="https://twitter.com/blgc_official" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
             </div>
-            <div class="footer-col-3">
+            <div id="general-footer-col-3">
                 <div>
-                    <div class="footer-head"><a href="../what-we-do/">What we do</a></div>
-                    <ul>
-                        <li><a href="../what-we-do/beach-training">Beach Training</a></li>
-                        <li><a href="../what-we-do/pool-training">Pool Training</a></li>
-                        <li><a href="../what-we-do/irb-training">IRB Training</a></li>
-                        <li><a href="../what-we-do/competitions">Competitions</a></li>
-                        <li><a href="../what-we-do/events">Events</a></li>
+                    <div class="general-footer-heading"><a class="general-footer-link" href="../what-we-do/">What we do</a></div>
+                    <ul class="general-footer-list">
+                        <li><a class="general-footer-link" href="../what-we-do/beach-training">Beach Training</a></li>
+                        <li><a class="general-footer-link" href="../what-we-do/pool-training">Pool Training</a></li>
+                        <li><a class="general-footer-link" href="../what-we-do/irb-training">IRB Training</a></li>
+                        <li><a class="general-footer-link" href="../what-we-do/competitions">Competitions</a></li>
+                        <li><a class="general-footer-link" href="../what-we-do/events">Events</a></li>
                     </ul>
                 </div>
                 <div>
-                    <div class="footer-head"><a href="../about-us/">About Us</a></div>
-                    <ul>
-                        <li><a href="../about-us/our-history">Our History</a></li>
-                        <li><a href="../about-us/our-future">Our Future</a></li>
+                    <div class="general-footer-heading"><a class="general-footer-link"  href="../about-us/">About Us</a></div>
+                    <ul class="general-footer-list">
+                        <li><a class="general-footer-link" href="../about-us/our-history">Our History</a></li>
+                        <li><a class="general-footer-link" href="../about-us/our-future">Our Future</a></li>
                     </ul>
                 </div>
                 <div>
-                    <div class="footer-head"><a>News + Events</a></div>
-                    <ul>
-                        <li><a href="../news/article?id=001">Development Begins</a></li>
-                        <li><a href="../event/article?id=001">Speeds '24</a></li>
+                    <div class="general-footer-heading"><a class="general-footer-link" >News + Events</a></div>
+                    <ul class="general-footer-list">
+                        <li><a class="general-footer-link" href="../news/article?id=001">Development Begins</a></li>
+                        <li><a class="general-footer-link" href="../event/article?id=001">Speeds '24</a></li>
                     </ul>
                 </div>
                 <div>
-                    <div class="footer-head"><a>Members Page</a></div>
-                    <ul>
-                        <li><a href="../members/membership-form">Membership Form</a></li>
-                        <li><a href="../members/annual-membership-payments">Annual Membership Payment</a></li>
-                        <li><a href="../members/out-team">Our Team</a></li>
-                        <li><a href="../members/members-shop">Members Shop</a></li>
-                        <li><a href="../members/risk-assessment">Risk Assessment</a></li>
-                        <li><a href="../members/par-q">PAR-Q</a></li>
-                        <li><a href="../members/covid-19-regulations">Covid-19 Regulations</a></li>
+                    <div class="general-footer-heading"><a class="general-footer-link"  href="../members/">Members Page</a></div>
+                    <ul class="general-footer-list">
+                        <li><a class="general-footer-link" href="../members/membership-form">Membership Form</a></li>
+                        <li><a class="general-footer-link" href="../members/annual-membership-payments">Annual Membership Payment</a></li>
+                        <li><a class="general-footer-link" href="../members/out-team">Our Team</a></li>
+                        <li><a class="general-footer-link" href="../members/members-shop">Members Shop</a></li>
+                        <li><a class="general-footer-link" href="../members/risk-assessment">Risk Assessment</a></li>
+                        <li><a class="general-footer-link" href="../members/par-q">PAR-Q</a></li>
+                        <li><a class="general-footer-link" href="../members/covid-19-regulations">Covid-19 Regulations</a></li>
                     </ul>
                 </div>
             </div>
