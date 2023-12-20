@@ -1,4 +1,9 @@
-.footer-container {
+/**********/
+/* FOOTER */
+/**********/
+
+/* Footer Container */
+#general-footer-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -9,22 +14,49 @@
     max-width: 100%;
 }
 
-.footer-container a {
+/* Footer Links */
+.general-footer-link {
     text-decoration: none;
     color: black;
 }
 
-.footer-col-1 {
+/* Footer Column 1 */
+/*******************/
+
+/* Footer Column 1 Formatting */
+#general-footer-col-1 {
     width: 30%;
     padding: 8px;
 }
 
-.footer-col-1 p {
+/* Footer Column 1 Charity Text + Copyright */
+.general-footer-col-1-text {
     margin: 0;
     padding: 8px;
 }
 
-.footer-col-2 {
+/* Footer Column 1 Row 1 */
+#general-footer-logo-and-text-container {
+    display: flex;
+}
+
+/* Footer Column 1 Logo */
+#general-footer-logo {
+    padding: 8px;
+}
+
+/* Footer Column 1 Bournemouth Lifegaurds Text */
+#general-footer-text {
+    padding: 16px 8px;
+    margin: 0;
+    font-weight: 900;
+}
+
+/* Footer Column 2 */
+/*******************/
+
+/* Footer Column 2 Formatting */
+#general-footer-col-2 {
     width: 10%;
     display: flex;
     flex-direction: column;
@@ -33,64 +65,72 @@
     padding: 16px;
 }
 
-.footer-col-3 {
+/* Footer Column 3 */
+/*******************/
+
+/* Footer Column 3 Formatting */
+#general-footer-col-3 {
     width: 60%;
     display: flex;
     justify-content: space-between;
     padding: 16px;
 }
 
-.logo-and-text-container {
-    display: flex;
-}
-
-#logo-footer {
-    padding: 8px;
-}
-
-#logo-text-footer {
-    padding: 16px 8px;
-}
-
-.footer-col-3 {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-}
-
-.footer-col-3 ul{
+/* Footer Column 3 Link Lists */
+.general-footer-list {
     padding-left: 20px;
 }
 
-.footer-head {
+/* Footer Column 3 Link Lists Headings */
+.general-footer-heading {
     font-weight: 900;
 }
 
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* For screens where the logo streches */
 @media screen and (max-width: 1000px) {
-    #logo-footer {
+    
+    /* Unsquish the logo */
+    #general-footer-logo {
         padding: 16px 8px;
     }
+
 }
 
-
+/* For screens where footer squishes */
 @media screen and (max-width: 900px) {
-    #logo-footer {
+
+    /* Unsquish the logo */
+    #general-footer-logo {
         padding: 8px;
     }
-    .footer-col-3 {
+
+    /* Remove Column */
+    #general-footer-col-3 {
         display: none;
     }
-    .footer-col-1 {
+
+    /* Adjust Column Sizes */
+    #general-footer-col-1 {
         width: 80%;
     }
-    .footer-col-2 {
+
+    /* Adjust Column Sizes */
+    #general-footer-col-2 {
         width: 20%;
     }
+
 }
 
+/* For screens where the logo streches */
 @media screen and (max-width: 375px) {
-    #logo-footer {
+
+    /* Unsquish the logo */
+    #general-footer-logo {
         padding: 16px 8px;
     }
+
 }
