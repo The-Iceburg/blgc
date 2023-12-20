@@ -1,22 +1,33 @@
+/********************/
+/* NOTIFICATION BAR */
+/********************/
 
-.notification-bar {
+/* The Notifcation Bar Styling - Spans the width of the page, has center aligned text and is red */
+#general-notif-bar-container {
     width: 100%;
     text-align: center;
     background-color: red;
 }
-.notification-bar p {
+
+/* The Notifcation Bar Text Styling */
+#general-notif-bar-container-text {
     margin: 0;
     padding: 8px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
-.notification-bar a {
+
+/* The Notifcation Bar Link Styling - Prevents the links from appearing blue */
+.general-notif-bar-container-link {
     color: black;
 }
 
-/* The list of items within the navigation-bar */
+/******************/
+/* NAVIGATION BAR */
+/******************/
 
-.nav-element-list {
+/* The list of items within the navigation-bar */
+#general-nav-bar-element-list {
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -25,9 +36,8 @@
     background-color: white;
 }
 
-/* Each Element on the navigation-bar */
-
-.nav-element {
+/* The Individual Elements in the navigation bar */
+.general-nav-element {
     display: block;
     color: black;
     padding: 16px 16px;
@@ -38,49 +48,33 @@
     font-weight: 900;
 }
 
-/* Elements which float on the right */
-
-.nav-float-right {
-    float: right;
-}
-
-/* Elements which float on the left */
-
-.nav-float-left {
-    float: left;
-    margin-left: 0;
-    padding: 16px 4px;
-}
-
-#blgc-logo {
-    padding: 8px 8px;
-}
-
-#blgc-text {
-    padding: 4px 4px;
-}
-
-/* Elements which change when hovered */
-
-.nav-hoverable:hover {
+/* Nav Elements whos apperance changes when hovered */
+.general-nav-hoverable:hover {
     background-color: #f1f1f1;
     border-radius: 25px;
     padding: 8px 16px;
     margin-top: 8px;
 }
 
-/* Hamburger Menu (for smaller devices) */
+/* Navigation Right Element */
+/****************************/
 
+/* Nav Elements are positioned on the right */
+.general-nav-position-right {
+    float: right;
+}
+
+/* Hamburger Menu (for smaller devices) */
 #hamburger-menu {
     display: none;
 }
 
+/* Members Icon (for smaller devices) */
 #members-page-icon {
     display: none;
 }
 
 /* Donation Button */
-
 #cta-donate {
     background-color: #EF877E;
     border-radius: 25px;
@@ -89,8 +83,30 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-/* For screens where the nav bar squishes onto multiple lines */
+/* Navigation Left Element */
+/***************************/
 
+/* Nav Elements are positioned on the left */
+.general-nav-position-left {
+    float: left;
+}
+
+/* The BLGC Logo */
+#blgc-logo {
+    padding: 8px 8px;
+    margin: 0;
+}
+
+/* The text (right of the logo) that reads "Bournemouth Lifegaurd Corps" */
+#blgc-text {
+    padding: 4px 4px;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* For screens where the nav bar squishes onto multiple lines */
 @media screen and (max-width: 1100px) {
 
     /* Show the burger menu icon */
@@ -98,23 +114,34 @@
         display: block;
     }
 
+    /* Show the members page icon */
     #members-page-icon {
         display: block;
     }
 
-    /* Hide the navigation menu */
-    .nav-hidden {
+    /* Hide the main navigation menu */
+    .general-nav-width-restricted {
         display: none;
     }
+
 }
 
+/* For screens where the nav bar squishes onto multiple lines */
 @media screen and (max-width: 400px) {
+
+    /* Hide the donation button */
     #cta-donate {
         display: none;
     }
+
 }
+
+/* For screens where the nav bar squishes onto multiple lines */
 @media screen and (max-width: 300px) {
+
+    /* Hide the members page icon */
     #members-page-icon {
         display: none;
     }
+    
 }

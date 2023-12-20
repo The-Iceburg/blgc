@@ -1,20 +1,28 @@
+/**************/
+/* WHAT WE DO */
+/**************/
 
-#wwd-text {
+/* Header of the what we do section */
+#home-what-we-do-heading {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
 }
 
-.what-we-do-container {
+/* Container of the individual what we do sub-sections */
+.home-what-we-do-tile-container {
     padding: 0px 10px;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.what-we-do-tile {
-    padding: 20px; /* Adjust the padding as needed */
-    box-sizing: border-box; /* Ensures padding is included in the width */
+/* What We Do Tiles */
+/********************/
+
+/* The individual what we do sub-sections */
+.home-what-we-do-tile {
+    padding: 20px;
     margin: 0 20px;
     width: 30%;
     text-align: center;
@@ -23,32 +31,31 @@
     font-weight: 900;
 }
 
-.what-we-do-tile-head {
+/* The sub-section heading */
+.home-what-we-do-tile-heading {
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     padding-bottom: 20px;
     margin: 0;
 }
 
-.what-we-do-tile-desc {
+/* The sub-section image */
+.home-what-we-do-tile-image {
+    object-fit: cover;
+    height: 200px;
+    width: 95%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* The sub-section description */
+.home-what-we-do-tile-desc {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
-#pool-training {
-    background-color: #50a3d7;
-    box-shadow: rgba(80, 163, 215, 0.4) 0px 5px, rgba(80, 163, 215, 0.3) 0px 10px, rgba(80, 163, 215, 0.2) 0px 15px, rgba(80, 163, 215, 0.1) 0px 20px, rgba(80, 163, 215, 0.05) 0px 25px;
-}
-#beach-training {
-    background-color: #ef877e;
-    box-shadow: rgba(239, 135, 126, 0.4) -5px 5px, rgba(239, 135, 126, 0.3) -10px 10px, rgba(239, 135, 126, 0.2) -15px 15px, rgba(239, 135, 126, 0.1) -20px 20px, rgba(239, 135, 126, 0.05) -25px 25px;
-}
-#irb-training {
-    background-color: #fcde5a;
-    box-shadow: rgba(252, 222, 90, 0.4) 5px 5px, rgba(252, 222, 90, 0.3) 10px 10px, rgba(252, 222, 90, 0.2) 15px 15px, rgba(252, 222, 90, 0.1) 20px 20px, rgba(252, 222, 90, 0.05) 25px 25px;
-}
-
-.learn-more {
+/* The sub-section learn-more button */
+.home-what-we-do-learn-more-button {
     background-color: #ffffff;
     border-width: 0px;
     border-radius: 25px;
@@ -60,29 +67,58 @@
     font-weight: 900;
 }
 
-.what-we-do-tile img {
-    object-fit: cover;
-    height: 200px;
-    width: 95%;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* What We Do Tiles (Individual Styling) */
+/*****************************************/
+
+/* The pool-training sub-section */
+#home-what-we-do-pool-training-tile {
+    background-color: #50a3d7;
+    box-shadow: rgba(80, 163, 215, 0.4) 0px 5px, rgba(80, 163, 215, 0.3) 0px 10px, rgba(80, 163, 215, 0.2) 0px 15px, rgba(80, 163, 215, 0.1) 0px 20px, rgba(80, 163, 215, 0.05) 0px 25px;
 }
-/* Media query for medium screens */
+
+/* The beach-training sub-section */
+#home-what-we-do-beach-training-tile {
+    background-color: #ef877e;
+    box-shadow: rgba(239, 135, 126, 0.4) -5px 5px, rgba(239, 135, 126, 0.3) -10px 10px, rgba(239, 135, 126, 0.2) -15px 15px, rgba(239, 135, 126, 0.1) -20px 20px, rgba(239, 135, 126, 0.05) -25px 25px;
+}
+
+/* The irb-training sub-section */
+#home-what-we-do-irb-training-tile {
+    background-color: #fcde5a;
+    box-shadow: rgba(252, 222, 90, 0.4) 5px 5px, rgba(252, 222, 90, 0.3) 10px 10px, rgba(252, 222, 90, 0.2) 15px 15px, rgba(252, 222, 90, 0.1) 20px 20px, rgba(252, 222, 90, 0.05) 25px 25px;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* For screens where the tiles appear squished */
 @media screen and (max-width: 900px) {
-    .what-we-do-tile {
+
+    /* Container of the individual what we do sub-sections */
+    .home-what-we-do-tile-container {
+        display: block;
+    }
+
+    /* The individual what we do sub-sections */
+    .home-what-we-do-tile {
         width: 90%;
         margin: 5%;
     }
-    .what-we-do-container {
-        display: block;
-    }
-    #pool-training {
+
+    /* The pool-training sub-section */
+    #home-what-we-do-pool-training-tile {
         box-shadow: rgba(80, 163, 215, 0.4) 0px 5px, rgba(80, 163, 215, 0.3) 0px 10px, rgba(80, 163, 215, 0.2) 0px 15px, rgba(80, 163, 215, 0.1) 0px 20px, rgba(80, 163, 215, 0.05) 0px 25px;
     }
-    #beach-training {
+
+    /* The beach-training sub-section */
+    #home-what-we-do-beach-training-tile {
         box-shadow: rgba(239, 135, 126, 0.4) 0px 5px, rgba(239, 135, 126, 0.3) 0px 10px, rgba(239, 135, 126, 0.2) 0px 15px, rgba(239, 135, 126, 0.1) 0px 20px, rgba(239, 135, 126, 0.05) 0px 25px;
     }
-    #irb-training {
+
+    /* The irb-training sub-section */
+    #home-what-we-do-irb-training-tile {
         box-shadow: rgba(252, 222, 90, 0.4) 0px 5px, rgba(252, 222, 90, 0.3) 0px 10px, rgba(252, 222, 90, 0.2) 0px 15px, rgba(252, 222, 90, 0.1) 0px 20px, rgba(252, 222, 90, 0.05) 0px 25px;
     }
+
 }
